@@ -9,7 +9,7 @@ pipeline {
          	    } 
         }
 {  
-       	    stage("Developer 1 ") {  
+       	    stage("file modified") {  
            	    steps {  
               	    echo "cloning repository" 
               	    echo "repo cloned successfully"  
