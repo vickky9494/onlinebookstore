@@ -1,20 +1,20 @@
 pipeline {  
     agent any  
         stages {  
-       	    stage("Developer 3 ") {  
+       	    stage("Dev 3 ") {  
            	    steps {  
               	    echo "cloning repository" 
               	    echo "repo cloned successfully"  
               	    }  
          	    } 
       
-        }stage("Jenkins pushed ") {  
+        }stage("Jenkins ") {  
            	    steps {  
               	    echo "cloning repository" 
               	    echo "repo cloned successfully"  
               	    }  
          	    } 
-        }stage("Jenkins final file") {  
+        }stage("Jenkins final ") {  
            	    steps {  
               	    echo "cloning repository" 
               	    echo "repo cloned successfully"  
