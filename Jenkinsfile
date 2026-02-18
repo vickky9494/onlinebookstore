@@ -19,11 +19,7 @@ pipeline {
                bat 'mvn test'
            }
         }
-        stage('Generative Junit Tests result'){
-            steps{
-                junit 'target/surefire-reports/*.xml'
-            }
-        }
+       
         stage('Gererated the Artifacts'){
             steps{
                 archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
