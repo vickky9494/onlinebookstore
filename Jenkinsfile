@@ -25,7 +25,7 @@ pipeline {
                 archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
             }
         }
-         stage('Gererated the Artifacts'){
+         stage('Deploy'){
             steps{
                 deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'TomCatCredentials', path: '', url: 'http://localhost:8080/')], contextPath: 'Devopsonlinebookstore Application', war: 'target/*.war'
             }
